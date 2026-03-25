@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import random
 
 class Qubit:
@@ -32,12 +33,14 @@ class Qubit:
         self.alpha, self.beta = new_alpha, new_beta
 
 
+import matplotlib.pyplot as plt
+
 def run_experiment(trials=1000):
     results = {0: 0, 1: 0}
 
     for _ in range(trials):
-        q = Qubit(1.0, 0.0)  # Start in |0>
-        q.apply_hadamard()   # Put into superposition
+        q = Qubit(1.0, 0.0)
+        q.apply_hadamard()
         outcome = q.measure()
         results[outcome] += 1
 
@@ -46,6 +49,16 @@ def run_experiment(trials=1000):
     print(f"1: {results[1]}")
     print(f"Ratio 0: {results[0]/trials:.2f}")
     print(f"Ratio 1: {results[1]/trials:.2f}")
+
+    # 📊 Plot histogram
+    labels = ['0', '1']
+    values = [results[0], results[1]]
+
+    plt.bar(labels, values)
+    plt.title("Quantum Measurement Distribution")
+    plt.xlabel("State")
+    plt.ylabel("Counts")
+    plt.show()
 
 
 if __name__ == "__main__":
