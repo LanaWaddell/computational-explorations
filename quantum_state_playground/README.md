@@ -15,3 +15,7 @@ The goal is to build intuition for quantum systems by translating abstract conce
 ## Notes
 
 This is a classical simulation designed for conceptual understanding, not a full quantum computing framework.
+
+## Result
+
+Running repeated measurements after superposition produces an approximately 50/50 distribution, consistent with expected probabilistic outcomes.
