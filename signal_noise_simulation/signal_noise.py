@@ -1,19 +1,17 @@
 import random
+import matplotlib.pyplot as plt
 
 def generate_signal(length=100):
-    """Generate a clean signal"""
     return [1 for _ in range(length)]
 
 def add_noise(signal, noise_level=0.5):
-    """Add noise to the signal"""
-    noisy_signal = []
-    for value in signal:
-        noise = random.uniform(-noise_level, noise_level)
-        noisy_signal.append(value + noise)
-    return noisy_signal
+    return [value + random.uniform(-noise_level, noise_level) for value in signal]
+
+def observer_effect(signal, strength=0.2):
+    """Simulate observation altering the signal"""
+    return [value + random.uniform(-strength, strength) for value in signal]
 
 def moving_average(signal, window_size=5):
-    """Simple filter to reduce noise"""
     filtered = []
     for i in range(len(signal)):
         window = signal[max(0, i - window_size):i + 1]
@@ -21,21 +19,33 @@ def moving_average(signal, window_size=5):
     return filtered
 
 def measure_clarity(original, processed):
-    """Measure how close processed signal is to original"""
     error = sum(abs(o - p) for o, p in zip(original, processed))
     return error / len(original)
+
+def plot_signals(original, noisy, observed, filtered):
+    plt.figure(figsize=(10, 5))
+    plt.plot(original, label="Original Signal", linestyle='dashed')
+    plt.plot(noisy, label="Noisy Signal", alpha=0.6)
+    plt.plot(observed, label="Observed Signal", alpha=0.6)
+    plt.plot(filtered, label="Filtered Signal", linewidth=2)
+    plt.legend()
+    plt.title("Signal vs Noise Simulation")
+    plt.xlabel("Time")
+    plt.ylabel("Amplitude")
+    plt.show()
 
 def run_simulation():
     signal = generate_signal()
     noisy = add_noise(signal, noise_level=0.8)
-    filtered = moving_average(noisy)
-
-    clarity_before = measure_clarity(signal, noisy)
-    clarity_after = measure_clarity(signal, filtered)
+    observed = observer_effect(noisy, strength=0.3)
+    filtered = moving_average(observed)
 
     print("Clarity (lower is better):")
-    print(f"Before filtering: {clarity_before:.4f}")
-    print(f"After filtering:  {clarity_after:.4f}")
+    print(f"Noisy:     {measure_clarity(signal, noisy):.4f}")
+    print(f"Observed:  {measure_clarity(signal, observed):.4f}")
+    print(f"Filtered:  {measure_clarity(signal, filtered):.4f}")
+
+    plot_signals(signal, noisy, observed, filtered)
 
 if __name__ == "__main__":
     run_simulation()
