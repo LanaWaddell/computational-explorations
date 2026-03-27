@@ -1,5 +1,7 @@
 # Mission Lana: Satellite QKD & Quantum Teleportation Simulator
 
+[Download the Full Project Presentation (PDF)](./Mission%20Lana%20-%20Presentation.pdf)
+
 A Python-based R&D sandbox for simulating satellite-to-ground Quantum Key Distribution (QKD) and Entanglement-based communication protocols.
 
 ## 📋 Project Overview
