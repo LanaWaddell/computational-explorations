@@ -4,6 +4,14 @@ Python-based computational projects exploring signal processing, system dynamics
 
 ## Selected Projects
 
+### 🛰️ Featured Project: Mission Lana (Satellite QKD)
+An advanced R&D simulation of a Low Earth Orbit (LEO) quantum communication link.
+* **Core Simulations:** BB84 with Decoy States, Entanglement Distribution, and Quantum Teleportation.
+* **Performance:** Achieved **65.8 Mb** secure key volume and **0.85 teleportation fidelity**.
+* **Resilience:** Successfully mitigated eavesdropping (Eve) and atmospheric loss using non-classical protocols.
+* [View the full project here](./quantum_aero_qkd)
+
+
 ### Signal vs Noise Simulation
 Explores how structured signals can be recovered from noisy environments, including an observer-effect parameter and visualization of system evolution.
 
