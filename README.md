@@ -2,6 +2,17 @@
 
 Python-based computational projects exploring signal processing, system dynamics, and quantum-inspired models. Developed alongside the University of Helsinki MOOC, this repository demonstrates applied programming, simulation design, and translating complex concepts into executable code.
 
+## Overview
+
+This repository contains exploratory computational work related to quantum communication, signal integrity, and adaptive systems.
+
+The focus is on developing intuition and prototype models for:
+- Information transfer under noise and uncertainty
+- Signal vs noise dynamics in quantum and hybrid systems
+- Adaptive and closed-loop system behavior
+
+These projects are part of an ongoing independent research trajectory toward quantum networking and system-level integration.
+
 ## Selected Projects
 
 ### 🛰️ Featured Project: Mission Lana (Satellite QKD)
