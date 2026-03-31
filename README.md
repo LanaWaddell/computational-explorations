@@ -2,9 +2,22 @@
 
 Python-based computational projects exploring signal processing, system dynamics, and quantum-inspired models. Developed alongside the University of Helsinki MOOC, this repository demonstrates applied programming, simulation design, and translating complex concepts into executable code.
 
+## Research Focus
+
+Exploring coherence, signal integrity, and information flow in quantum-inspired and photonic systems.
+
+Current direction:
+- Coherence dynamics in noisy and open systems  
+- Signal propagation under uncertainty and decoherence  
+- Nonlinear and adaptive behaviors in communication architectures  
+- Early-stage modeling of photonic and quantum-inspired systems  
+
+This repository serves as a computational sandbox for developing intuition and prototypes bridging:
+quantum communication, photonics, and adaptive system design.
+
 ## Overview
 
-This repository contains exploratory computational work related to quantum communication, signal integrity, and adaptive systems.
+Exploratory computational work related to quantum communication, signal integrity, and adaptive systems.
 
 The focus is on developing intuition and prototype models for:
 - Information transfer under noise and uncertainty
