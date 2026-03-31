@@ -59,3 +59,28 @@ My goal is not only to learn programming syntax, but to use code as a tool for m
 ## Perspective
 
 These projects reflect an interest in using computation not just for implementation, but as a tool for modeling uncertainty, emergence, and system behaviour across domains.
+
+## Research Trajectory
+
+This work is evolving toward:
+
+- Modeling coherence preservation in driven or noisy environments  
+- Exploring photonic / quantum-inspired communication frameworks  
+- Developing adaptive, feedback-based signal systems  
+- Bridging simulation with physical quantum system analogs  
+
+Future directions include:
+- Photonic system modeling  
+- Quantum communication protocols (QKD-inspired systems)  
+- Hybrid quantum-classical architectures
+
+## Why This Matters
+
+Understanding how coherence and signal integrity behave in real-world conditions is critical for scalable quantum communication, sensing, and hybrid quantum-classical systems.
+
+## Current Focus
+
+Actively developing research framing and seeking alignment with researchers working in:
+- photonic quantum systems  
+- exciton-polariton dynamics  
+- nonlinear and open quantum systems  
